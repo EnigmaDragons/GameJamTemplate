@@ -1,4 +1,4 @@
-Game Jam Kanban Board Setup Guide
+# Game Jam Kanban Board Setup Guide
 
 ----
 
@@ -7,7 +7,8 @@ Game Jam Kanban Board Setup Guide
 1. Create Github Repo
 2. Login to Zube
 3. Click "Create a new project"
-4. Select the Github Repo
+4. Select the Github Repo, and click "Create"
+5. Setup Columns for: Audio, UI, Gameplay, Coding, Bugs, In Progress, Done 
 
 ----
 
