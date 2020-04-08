@@ -31,6 +31,8 @@ We use a Kanban board. It looks like this.
 
 <img src="./img/kanban-board-1.jpg"></img>
 
+[See our Kanban Board Guide for our current board setup and process.](./kanban-board-guide.md)
+
 ----
 
 ### TL:DR - What do I need to do?
