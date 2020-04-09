@@ -32,7 +32,7 @@ public static class Message
     
     public sealed class MessageQueue
     {
-        private readonly Dictionary<Type, List<object>> _eventActions = new Dictionary<Type, List<object>>();
+        private readonly Dictionary<string, List<object>> _eventActions = new Dictionary<string, List<object>>();
         private readonly Dictionary<object, List<MessageSubscription>> _ownerSubscriptions = new Dictionary<object, List<MessageSubscription>>();
 
         private readonly Queue<object> _eventQueue = new Queue<object>();
@@ -48,7 +48,7 @@ public static class Message
 
         public void Subscribe(MessageSubscription subscription)
         {
-            var eventType = subscription.EventType;
+            var eventType = subscription.EventType.Name;
             if (!_eventActions.ContainsKey(eventType))
                 _eventActions[eventType] = new List<object>();
             if (!_ownerSubscriptions.ContainsKey(subscription.Owner))
@@ -79,7 +79,7 @@ public static class Message
 
         private void Publish(object payload)
         {
-            var eventType = payload.GetType();
+            var eventType = payload.GetType().Name;
 
             if (_eventActions.ContainsKey(eventType))
                 foreach (var action in _eventActions[eventType].ToList())
