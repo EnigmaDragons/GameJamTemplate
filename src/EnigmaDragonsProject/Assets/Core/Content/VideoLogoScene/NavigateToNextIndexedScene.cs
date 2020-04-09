@@ -7,5 +7,7 @@ public sealed class NavigateToNextIndexedScene : MonoBehaviour
     {
         if (SceneManager.sceneCount > 1)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            Debug.Log("No Next Scene Found in Build");
     }
 }
