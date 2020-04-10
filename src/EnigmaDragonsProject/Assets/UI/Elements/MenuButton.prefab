@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7393187524725660885}
   - component: {fileID: 1612062460753857839}
   - component: {fileID: 8164648040637180714}
+  - component: {fileID: 2636432959655020951}
   m_Layer: 5
-  m_Name: OptionsDoneButton
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,6 +143,19 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 1
     FloatVariable: {fileID: 0}
+--- !u!114 &2636432959655020951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164500542856588802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbce08b9f3744d9a1b36f0b8747a28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 6907781183014348685}
 --- !u!1 &7919127171356974098
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +168,7 @@ GameObject:
   - component: {fileID: 452635000457779509}
   - component: {fileID: 6907781183014348685}
   m_Layer: 5
-  m_Name: OptionsDoneText
+  m_Name: ButtonLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
