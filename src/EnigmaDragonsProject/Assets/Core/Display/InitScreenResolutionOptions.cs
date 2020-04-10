@@ -7,7 +7,8 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
 {
     [SerializeField] private DisplaySettings display;
     [SerializeField] private TMP_Dropdown dropdownMenu;
-    [SerializeField] private int minWidth = 800;
+    [SerializeField] private int minScreenWidth = 800;
+    [SerializeField] private Vector2Int screenRatio = new Vector2Int(16, 9);
 
     private Resolution[] _resolutions;
 
@@ -16,8 +17,8 @@ public sealed class InitScreenResolutionOptions : MonoBehaviour
         var comparer = new ResolutionEqualityComparer();
         display.InitWithoutChanging();
         _resolutions = Screen.resolutions
-            .Where(x => x.width % 16 == 0 && x.height % 9 == 0)
-            .Where(x => x.width > minWidth)
+            .Where(x => x.width % screenRatio.x == 0 && x.height % screenRatio.y == 0)
+            .Where(x => x.width > minScreenWidth)
             .Distinct(comparer)
             .Reverse()
             .ToArray();
