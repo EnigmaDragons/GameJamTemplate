@@ -56,7 +56,8 @@ AudioSource:
   m_GameObject: {fileID: 6438735157852827517}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4936545359520073510, guid: d6eedae8265dd6146907e7ef03b80fb6,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -157,6 +158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: d6eedae8265dd6146907e7ef03b80fb6, type: 2}
   valueName: UiVolume
-  reductionDb: 10
-  player: {fileID: 7318196694813104344}
-  demoSound: {fileID: 8300000, guid: d2d3358d72218ef4798f1ca2b15e1b1e, type: 3}
+  reductionDb:
+    UseConstant: 0
+    ConstantValue: 6
+    FloatVariable: {fileID: 11400000, guid: 1414f3852a506dc4393584d753739f6c, type: 2}
+  player: {fileID: 0}
+  demoSound: {fileID: 0}

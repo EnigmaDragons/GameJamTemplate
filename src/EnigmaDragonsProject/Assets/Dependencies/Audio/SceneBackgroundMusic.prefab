@@ -74,5 +74,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: d6eedae8265dd6146907e7ef03b80fb6, type: 2}
   valueName: MusicVolume
+  reductionDb:
+    UseConstant: 0
+    ConstantValue: 6
+    FloatVariable: {fileID: 11400000, guid: 9ac918dfd50115d40affcd6790d23bf9, type: 2}
   player: {fileID: 0}
   demoSound: {fileID: 0}

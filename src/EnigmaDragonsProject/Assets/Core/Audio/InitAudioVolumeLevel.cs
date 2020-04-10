@@ -5,8 +5,8 @@ public sealed class InitAudioVolumeLevel : MonoBehaviour
 {
     [SerializeField] private AudioMixer mixer;
     [SerializeField] private string valueName = "MusicVolume";
-    [SerializeField] private float reductionDb = 10f;
-    [Header("Optional - For Volume Change Preview Sound")]
+    [SerializeField] private FloatReference reductionDb = new FloatReference(0f);
+    [Header("Debug - For Initial Volume Preview Sound")]
     [SerializeField] private AudioSource player;
     [SerializeField] private AudioClip demoSound;
     
