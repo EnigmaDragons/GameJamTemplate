@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DisplaySettings
   m_EditorClassIdentifier: 
   isFullscreen: 1
-  screenSize: {x: 0, y: 0}
+  screenSize: {x: 3840, y: 2160}
