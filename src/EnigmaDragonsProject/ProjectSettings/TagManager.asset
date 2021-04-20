@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Music
   - UiSounds
+  - Loader
   layers:
   - Default
   - TransparentFX

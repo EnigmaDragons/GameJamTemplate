@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LogosController : MonoBehaviour
@@ -97,5 +96,5 @@ public class LogosController : MonoBehaviour
         _finishInSeconds = Mathf.Max(0, _finishInSeconds - Time.deltaTime);
     }
 
-    private void NavigateToNextScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    private void NavigateToNextScene() => Message.Publish(new NavigateToSceneRequested("MainMenu"));
 }
