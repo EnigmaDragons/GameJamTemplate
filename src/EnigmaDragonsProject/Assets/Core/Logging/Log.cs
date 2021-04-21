@@ -18,8 +18,9 @@ public static class Log
         {
             a();
         }
-        catch (Exception e)
+        catch
         {
+            // ignored
         }
     }
 }

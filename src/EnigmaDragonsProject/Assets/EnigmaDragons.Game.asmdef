@@ -1,8 +1,10 @@
 {
     "name": "EnigmaDragons.Game",
+    "rootNamespace": "",
     "references": [
         "GUID:8a18b43bbefca455abece4fd62e82bba",
-        "GUID:1de8d46595421b3459ea05eba6ce1840"
+        "GUID:1de8d46595421b3459ea05eba6ce1840",
+        "GUID:8ff874ea88a8b564cb44d36de5a9efaf"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -11,5 +13,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

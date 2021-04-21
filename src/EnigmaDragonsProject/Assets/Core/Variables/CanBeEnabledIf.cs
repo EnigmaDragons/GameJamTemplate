@@ -3,11 +3,11 @@ using UnityEngine;
 public sealed class CanBeEnabledIf : MonoBehaviour
 {
     [SerializeField] private GameObject target;
-    [SerializeField] private bool enabled = true;
+    [SerializeField] private bool isEnabled = true;
     [SerializeField] private BoolVariable variable;
 
     private void OnEnable()
     {
-        target.SetActive(variable.Value == enabled);
+        target.SetActive(variable.Value == isEnabled);
     }
 }
