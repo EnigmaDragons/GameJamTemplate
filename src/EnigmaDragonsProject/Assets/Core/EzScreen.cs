@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-
 #if UNITY_EDITOR_WIN
+using Input = UnityEngine.Input;
 using UnityEngine.Windows;
 #endif
 
