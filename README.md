@@ -39,12 +39,12 @@ Details on each are found below.
 
 Software Requirements:
 - Git
-- Unity 2019 (Version [CHANGE_ME])
+- Unity 2023 (Version [CHANGE_ME])
 - Any C# IDE
 
 Setup:
 1. Clone this repository using git
-2. Install any C# IDE of your choice. [Visual Studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) recommended.
+2. Install any C# IDE of your choice. [Visual Studio Code](https://code.visualstudio.com/) recommended.
 3. Install [Unity Hub](https://unity3d.com/get-unity/download)
 4. Launch Unity Hub and Install Unity Version [CHANGE_ME]
 5. In Unity Hub, click Add

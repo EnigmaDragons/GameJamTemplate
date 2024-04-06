@@ -42,9 +42,9 @@ namespace E7.Introloop
         {
             AudioImporter imp = AssetImporter.GetAtPath(path) as AudioImporter;
             imp.loadInBackground = true;
-            imp.preloadAudioData = false;
             AudioImporterSampleSettings settings = imp.defaultSampleSettings;
             settings.compressionFormat = AudioCompressionFormat.Vorbis;
+            settings.preloadAudioData = false;
             imp.defaultSampleSettings = settings;
             imp.SaveAndReimport();
         }
