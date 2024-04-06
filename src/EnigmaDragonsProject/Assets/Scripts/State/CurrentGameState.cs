@@ -1,17 +1,16 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "GameTemplate/OnlyOnce/CurrentGameState")]
-public sealed class CurrentGameState : ScriptableObject
+public static class CurrentGameState
 {
-    [SerializeField] private GameState gameState;
+    [SerializeField] private static GameState gameState;
 
-    public void Init() => gameState = new GameState();
-    public void Init(GameState initialState) => gameState = initialState;
-    public void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
-    public void Unsubscribe(object owner) => Message.Unsubscribe(owner);
+    public static void Init() => gameState = new GameState();
+    public static void Init(GameState initialState) => gameState = initialState;
+    public static void Subscribe(Action<GameStateChanged> onChange, object owner) => Message.Subscribe(onChange, owner);
+    public static void Unsubscribe(object owner) => Message.Unsubscribe(owner);
     
-    public void UpdateState(Action<GameState> apply)
+    public static void UpdateState(Action<GameState> apply)
     {
         UpdateState(_ =>
         {
@@ -20,7 +19,7 @@ public sealed class CurrentGameState : ScriptableObject
         });
     }
     
-    public void UpdateState(Func<GameState, GameState> apply)
+    public static void UpdateState(Func<GameState, GameState> apply)
     {
         gameState = apply(gameState);
         Message.Publish(new GameStateChanged(gameState));
